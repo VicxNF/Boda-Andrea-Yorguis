@@ -6,8 +6,8 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.overlay}></div>
       <div className={styles.content}>
-        <h1>Andrea y Yorguis</h1>
-        <p>21 de Febrero, 2026</p>
+        <h1>Andrea & Yorguis</h1>
+        <p>Nuestro Matrimonio</p>
       </div>
     </header>
   );

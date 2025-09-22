@@ -19,7 +19,7 @@ const Itinerario = () => {
           
           {/* --- Evento 1: Ceremonia --- */}
           <div className={styles.eventoCard}>
-            <div className={styles.icon}>⛪</div>
+            <div className={styles.icon}>👰🏻🤵🏻</div>
             <h3>Ceremonia</h3>
             <p className={styles.hora}>19:00 HRS</p>
             <p className={styles.lugar}>Terrazas de La Reina</p>

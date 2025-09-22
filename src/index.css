@@ -2,13 +2,16 @@
   --primary-color: #2E4366;  
   --secondary-color: #F2DCE0;
   --accent-color: #B38D88; 
-  --text-color: #1A2333; 
+  --text-color: #1A2333;
+  --candy-font: 'Emilys Candy', cursive;
 }
 
 body {
   margin: 0;
   font-family: 'Garamond', serif;
   background-image: url(assets/FONDO_SavethedateAndrea&Yorguis-03.jpg);
+  background-position: center ;
+  background-size: contain;
   color: var(--text-color);
 }
 
@@ -20,5 +23,5 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--candy-font);
 }

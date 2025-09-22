@@ -38,11 +38,10 @@ const NuestraBoda = () => {
   return (
     <div className={`container ${styles.bodaContainer}`}>
       <div className={styles.tarjeta}>
-        <p className={styles.mensaje}>El día en que nuestros corazones se unen para siempre ha llegado</p>
+        <h2 className={styles.mensaje}>La vuelta más importante de nuestras vidas será:</h2>
         <h2 className={styles.fecha}>
           {diaBoda} de {mesFormateado}, {anioBoda}
         </h2>
-        <img src={florDecorativa} alt="Adorno floral" className={styles.flor} />
         
         {Object.keys(tiempoRestante).length > 0 ? (
           <>
