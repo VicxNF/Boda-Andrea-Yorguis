@@ -1,20 +1,30 @@
 .galeriaContainer {
-    padding: 50px 0;
-    background-color: #fdfdfd; 
-    position: relative;
+    padding: 60px 0;
+    background-color: #fdfdfd;
+  }
+  
+  .titulo {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 50px;
   }
   
   .swiperContainer {
-    max-width: 1200px;
-    height: 450px;
-    padding: 30px 0;
+    width: 100%;
+    padding-bottom: 40px !important;
   }
   
   .swiperSlide {
-    width: 300px;
+    width: 80%;
+    max-width: 600px;
     height: 400px;
-    transform: translateZ(0);
-    backface-visibility: hidden;
+    cursor: pointer;
+  }
+  
+  .swiperSlide.swiper-slide-active {
+    opacity: 1;
   }
   
   .swiperSlide img {
@@ -23,7 +33,6 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
   
   :global(.swiper-button-next),

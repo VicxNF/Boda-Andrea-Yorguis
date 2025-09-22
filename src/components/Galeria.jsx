@@ -1,13 +1,11 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 import styles from './Galeria.module.css';
 
 import foto1 from '../assets/galeria/foto1.jpg';
@@ -18,49 +16,51 @@ import foto5 from '../assets/galeria/foto5.jpg';
 
 const imagenes = [foto1, foto2, foto3, foto4, foto5];
 
+const slides = imagenes.map(src => ({ src }));
+
 const Galeria = () => {
+  const [isOpen, setIsOpen] = useState(false);   
+  const [imageIndex, setImageIndex] = useState(0);
+
   return (
-    <div className={styles.galeriaContainer}>
-      <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        loop={true}
-        slidesPerView={'auto'}
-        loopedSlides={5}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={{ el: '.swiper-pagination', clickable: true }}
-        navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-          clickable: true,
-        }}
-        modules={[EffectCoverflow, Pagination, Navigation]}
-        className={styles.swiperContainer}
-        onAfterInit={(swiper) => {
-            swiper.update(); 
-            swiper.slideToLoop(0, 0); // Mueve al slide inicial sin animación
-          }}
-      >
-        {imagenes.map((imagen, index) => (
-          <SwiperSlide key={index} className={styles.swiperSlide}>
-            <img src={imagen} alt={`Recuerdo ${index + 1}`} />
-          </SwiperSlide>
-        ))}
-        
-        <div className="slider-controler">
-          <div className="swiper-button-prev slider-arrow"></div>
-          <div className="swiper-button-next slider-arrow"></div>
-          <div className="swiper-pagination"></div>
+    <> 
+      <div className={styles.galeriaContainer}>
+        <div className="container">
+          <h2 className={styles.titulo}>Nuestros Momentos</h2>
+          <Swiper
+            modules={[Pagination, Navigation, Autoplay]}
+            loop={true}
+            centeredSlides={true}
+            slidesPerView={'auto'}
+            spaceBetween={30}
+            pagination={{ clickable: true }}
+            navigation={true}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            className={styles.swiperContainer}
+          >
+            {imagenes.map((imagen, index) => (
+              <SwiperSlide 
+                key={index} 
+                className={styles.swiperSlide}
+                onClick={() => {
+                  setImageIndex(index); 
+                  setIsOpen(true);     
+                }}
+              >
+                <img src={imagen} alt={`Recuerdo de la pareja ${index + 1}`} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-      </Swiper>
-    </div>
+      </div>
+
+      <Lightbox
+        open={isOpen}
+        close={() => setIsOpen(false)}
+        slides={slides}
+        index={imageIndex}
+      />
+    </>
   );
 };
 
