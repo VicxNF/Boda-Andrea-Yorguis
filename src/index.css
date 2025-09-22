@@ -1,0 +1,24 @@
+:root {
+  --primary-color: #2E4366;  
+  --secondary-color: #F2DCE0;
+  --accent-color: #B38D88; 
+  --text-color: #1A2333; 
+}
+
+body {
+  margin: 0;
+  font-family: 'Garamond', serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}

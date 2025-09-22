@@ -1,0 +1,73 @@
+.itinerarioContainer {
+    background-color: #ffffff; /* Fondo blanco para esta sección */
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .titulo {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+  }
+  
+  .eventosWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Asegura que las tarjetas tengan la misma altura */
+    gap: 30px;
+    flex-wrap: wrap; /* Permite que se acomoden en pantallas pequeñas */
+  }
+  
+  .eventoCard {
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    width: 300px;
+    display: flex;
+    flex-direction: column; /* Alinea el contenido verticalmente */
+  }
+  
+  .icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  
+  .eventoCard h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin: 10px 0;
+  }
+  
+  .hora {
+    font-size: 1.1rem;
+    color: var(--accent-color); /* Color de acento para la hora */
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .lugar {
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 30px;
+    flex-grow: 1; /* Empuja el botón hacia abajo */
+  }
+  
+  .mapaButton {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px; /* Botón con bordes redondeados */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .mapaButton:hover {
+    background-color: #8a9c90; /* Un tono más oscuro del color primario */
+    transform: scale(1.05);
+  }
