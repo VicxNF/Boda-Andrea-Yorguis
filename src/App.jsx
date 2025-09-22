@@ -7,6 +7,7 @@ import Header from './components/Header';
 import NuestraBoda from './components/NuestraBoda';
 import Galeria from './components/Galeria';
 import Itinerario from './components/Itinerario';
+import MesaRegalos from './components/MesaRegalos';
 import PreguntasFrecuentes from './components/PreguntasFrecuentes';
 import RSVP from './components/RSVP';
 
@@ -17,6 +18,7 @@ function App() {
       <NuestraBoda />
       <Galeria />
       <Itinerario />
+      <MesaRegalos />
       <PreguntasFrecuentes />
       {/* Añade aquí los otros componentes en el orden que desees */}
       <RSVP />

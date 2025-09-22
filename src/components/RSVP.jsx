@@ -141,7 +141,7 @@ const RSVP = () => {
               </div>
 
               <div className={styles.formGroup}>
-                <label className={styles.label}>¿Necesitas transporte o indicaciones para llegar?</label>
+                <label className={styles.label}>¿Eres zurdo?</label>
                 <div className={styles.radioGroup}>
                   <label><input type="radio" name="transporte" value="Si"/> Sí</label>
                   <label><input type="radio" name="transporte" value="No" defaultChecked/> No</label>

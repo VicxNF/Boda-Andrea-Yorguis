@@ -14,10 +14,18 @@
   .faqList {
     max-width: 700px;
     margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08); 
   }
   
   .faqItem {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .faqItem:last-child {
+    border-bottom: none;
   }
   
   .pregunta {

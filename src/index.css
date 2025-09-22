@@ -8,7 +8,7 @@
 body {
   margin: 0;
   font-family: 'Garamond', serif;
-  background-color: var(--secondary-color);
+  background-image: url(assets/FONDO_SavethedateAndrea&Yorguis-03.jpg);
   color: var(--text-color);
 }
 
