@@ -59,7 +59,7 @@ const RSVP = () => {
 
         <form 
           onSubmit={handleSubmit}
-          action="https://script.google.com/macros/s/AKfycbxAPJARH2p-NyXcBWmQR5cY1R64xUVyJ35mr0wHxp6AkaEg_PvtvTblAzH0tON4BEbJ/exec" 
+          action={import.meta.env.VITE_GOOGLE_SCRIPT_URL} 
           method="POST" 
           className={styles.form}
         >
