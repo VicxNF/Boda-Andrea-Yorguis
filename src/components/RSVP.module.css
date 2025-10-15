@@ -46,6 +46,8 @@
   font-size: 1rem;
   font-family: 'Garamond', serif;
   color: var(--text-color);
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .radioGroup label, .checkboxGroup label {

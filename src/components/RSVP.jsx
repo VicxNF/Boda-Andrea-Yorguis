@@ -20,19 +20,16 @@ const RSVP = () => {
     try {
       const response = await fetch(form.action, {
         method: form.method,
-        body: data,
-        headers: {
-          'Accept': 'application/json'
-        }
+        body: data
       });
 
       if (response.ok) {
         setModalContent({ success: true, message: 'Tu confirmación ha sido enviada con éxito. ¡Muchas gracias!' });
         setFormStatus('success');
-        form.reset(); // Limpia el formulario
-        setAsistencia(''); // Resetea la vista condicional
+        form.reset();
+        setAsistencia('');
       } else {
-        throw new Error('Error en el envío');
+        throw new Error('Error en el envío a Google Sheets');
       }
     } catch (error) {
       setModalContent({ success: false, message: 'No pudimos enviar tu confirmación. Por favor, inténtalo de nuevo más tarde.' });
@@ -62,7 +59,7 @@ const RSVP = () => {
 
         <form 
           onSubmit={handleSubmit}
-          action="https://formspree.io/f/mvgqyyvd" 
+          action="https://script.google.com/macros/s/AKfycbxAPJARH2p-NyXcBWmQR5cY1R64xUVyJ35mr0wHxp6AkaEg_PvtvTblAzH0tON4BEbJ/exec" 
           method="POST" 
           className={styles.form}
         >
@@ -141,10 +138,10 @@ const RSVP = () => {
               </div>
 
               <div className={styles.formGroup}>
-                <label className={styles.label}>¿Eres zurdo?</label>
+                <label className={styles.label}>Para la organización de la mesa, ¿eres zurdo(a)?</label>
                 <div className={styles.radioGroup}>
-                  <label><input type="radio" name="transporte" value="Si"/> Sí</label>
-                  <label><input type="radio" name="transporte" value="No" defaultChecked/> No</label>
+                  <label><input type="radio" name="zurdo" value="Si"/> Sí</label>
+                  <label><input type="radio" name="zurdo" value="No" defaultChecked/> No</label>
                 </div>
               </div>
             </div>
