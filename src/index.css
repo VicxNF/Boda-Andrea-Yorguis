@@ -9,7 +9,7 @@
 body {
   margin: 0;
   font-family: 'Garamond', serif;
-  background-image: url(assets/FONDO_SavethedateAndrea&Yorguis-03.jpg);
+  background-image: url('/assets/FONDO_SavethedateAndrea&Yorguis-03.jpg');
   background-position: center ;
   background-size: contain;
   color: var(--text-color);

@@ -8,11 +8,11 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import styles from './Galeria.module.css';
 
-import foto1 from '../assets/galeria/foto1.jpg';
-import foto2 from '../assets/galeria/foto2.jpg';
-import foto3 from '../assets/galeria/foto3.jpg';
-import foto4 from '../assets/galeria/foto4.jpg';
-import foto5 from '../assets/galeria/foto5.jpg';
+import foto1 from '/assets/galeria/foto1.jpg';
+import foto2 from '/assets/galeria/foto2.jpg';
+import foto3 from '/assets/galeria/foto3.jpg';
+import foto4 from '/assets/galeria/foto4.jpg';
+import foto5 from '/assets/galeria/foto5.jpg';
 
 const imagenes = [foto1, foto2, foto3, foto4, foto5];
 

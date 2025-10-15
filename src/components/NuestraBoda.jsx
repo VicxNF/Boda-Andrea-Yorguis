@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './NuestraBoda.module.css';
-import florDecorativa from '../assets/flor.png';
+import florDecorativa from '/assets/flor.png';
 
 const NuestraBoda = () => {
   const fechaDeLaBoda = new Date('February 21, 2026 17:00:00');
