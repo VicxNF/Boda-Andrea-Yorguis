@@ -13,18 +13,23 @@
     font-size: 1.8rem;
   }
 
-  .bodaContainer {
-    padding: 60px 20px;
-  }
+.bodaContainer {
+  padding: 60px 20px;
+  background-color: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
   
-  .tarjeta {
-    border-radius: 10px;
-    padding: 50px 40px;
-    max-width: 500px; /* Ajusta el ancho si lo necesitas */
-    margin: 0 auto;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Sombra sutil para destacar */
-    text-align: center;
-  }
+.tarjeta {
+  padding: 50px 40px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
   
   .mensaje {
     font-size: 2.2rem; /* Tamaño de letra similar al ejemplo */

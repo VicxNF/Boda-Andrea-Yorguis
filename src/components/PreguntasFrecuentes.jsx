@@ -4,7 +4,7 @@ import styles from './PreguntasFrecuentes.module.css';
 const faqs = [
   {
     pregunta: "¿El lugar cuenta con buena señal?",
-    respuesta: "Sí, el lugar cuenta solo con señal 3G. Por tanto, toma las previsiones si requieres transporte de regreso por aplicaciones (UBER, DIDI, CABIFY)."
+    respuesta: "Sí, el lugar cuenta con señal 3G y Movistar 4G y 5G. Por tanto, toma las previsiones si requieres transporte de regreso por aplicaciones (UBER, DIDI, CABIFY).<br/><br/>Nombre del WiFi: TerrazasdelaReina.<br/>Clave: sinclave"
   },
   {
     pregunta: "¿Se puede fumar en el lugar?",
@@ -63,7 +63,7 @@ const PreguntasFrecuentes = () => {
                 <span className={`${styles.icon} ${openIndex === index ? styles.open : ''}`}>+</span>
               </button>
               <div className={`${styles.respuesta} ${openIndex === index ? styles.respuestaAbierta : ''}`}>
-                <p>{faq.respuesta}</p>
+                <p dangerouslySetInnerHTML={{ __html: faq.respuesta }}></p>
               </div>
             </div>
           ))}

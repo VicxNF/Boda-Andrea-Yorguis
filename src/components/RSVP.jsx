@@ -54,7 +54,7 @@ const RSVP = () => {
       <div className="container">
         <h2 className={styles.titulo}>Confirma tu Asistencia</h2>
         <p className={styles.subtitulo}>
-          Por favor, responde antes del 25 de Septiembre, 2025. ¡Tu presencia es nuestro mejor regalo!
+          Por favor, responde antes del 30 de Noviembre, 2025. ¡Tu presencia es nuestro mejor regalo!
         </p>
 
         <form 
