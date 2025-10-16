@@ -6,6 +6,7 @@ import React from 'react';
 import Header from './components/Header';
 import NuestraBoda from './components/NuestraBoda';
 import Galeria from './components/Galeria';
+import FotosCompartidas from './components/FotosCompartidas';
 import Itinerario from './components/Itinerario';
 import MesaRegalos from './components/MesaRegalos';
 import PreguntasFrecuentes from './components/PreguntasFrecuentes';
@@ -17,10 +18,10 @@ function App() {
       <Header />
       <NuestraBoda />
       <Galeria />
+      <FotosCompartidas />
       <Itinerario />
       <MesaRegalos />
       <PreguntasFrecuentes />
-      {/* Añade aquí los otros componentes en el orden que desees */}
       <RSVP />
     </div>
   );

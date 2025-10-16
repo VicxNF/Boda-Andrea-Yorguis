@@ -1,0 +1,48 @@
+.fotosContainer {
+  padding: 60px 20px;
+  background-color: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+  
+.titulo {
+  font-family: var(--candy-font);
+  color: #ffffff;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+  
+.descripcion {
+  font-size: 1.2rem;
+  color: #ffffff;
+  max-width: 650px;
+  margin: 0 auto 30px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+  
+  .qrCode {
+    display: block;
+    margin: 0 auto 30px;
+    max-width: 250px; /* Tamaño del QR */
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+.linkButton {
+  font-size: 1rem;
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: bold;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+  
+  .linkButton:hover {
+    opacity: 1;
+  }
