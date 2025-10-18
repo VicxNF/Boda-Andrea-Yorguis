@@ -1,0 +1,56 @@
+.playlistContainer {
+  padding: 60px 20px;
+  background-color: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+  
+.contentBox {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  text-align: center;
+}
+  
+  .icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #1DB954;
+  }
+  
+.titulo {
+  font-family: var(--candy-font);
+  color: #ffffff;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+  
+.descripcion {
+  font-size: 1.2rem;
+  color: #ffffff;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+  
+  .ctaButton {
+    display: inline-block;
+    background-color: #1DB954; 
+    color: white;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .ctaButton:hover {
+    background-color: #1ed760;
+    transform: scale(1.05);
+  }

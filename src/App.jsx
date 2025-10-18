@@ -9,6 +9,7 @@ import Galeria from './components/Galeria';
 import FotosCompartidas from './components/FotosCompartidas';
 import Itinerario from './components/Itinerario';
 import MesaRegalos from './components/MesaRegalos';
+import PlaylistBoda from './components/PlaylistBoda';
 import PreguntasFrecuentes from './components/PreguntasFrecuentes';
 import RSVP from './components/RSVP';
 
@@ -21,6 +22,7 @@ function App() {
       <FotosCompartidas />
       <Itinerario />
       <MesaRegalos />
+      <PlaylistBoda />
       <PreguntasFrecuentes />
       <RSVP />
     </div>
