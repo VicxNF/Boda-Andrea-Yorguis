@@ -118,3 +118,9 @@
   background-color: #c9a29c; /* Tono más claro del accent-color */
   transform: scale(1.02);
 }
+
+.conditionalField {
+  animation: fadeIn 0.5s ease;
+  /* Opcional: añade un poco de margen para separarlo */
+  margin-top: 15px; 
+}

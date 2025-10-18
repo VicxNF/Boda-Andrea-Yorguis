@@ -5,6 +5,7 @@ import styles from './RSVP.module.css';
 
 const RSVP = () => {
   const [asistencia, setAsistencia] = useState('');
+  const [vieneAcompanante, setVieneAcompanante] = useState('No');
   const [otroInput, setOtroInput] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState({ success: true, message: '' });
@@ -104,10 +105,38 @@ const RSVP = () => {
               <div className={styles.formGroup}>
                 <label className={styles.label}>¿Vendrás con acompañante? (solo si tu invitación lo indica)</label>
                 <div className={styles.radioGroup}>
-                  <label><input type="radio" name="acompanante" value="Si"/> Sí</label>
-                  <label><input type="radio" name="acompanante" value="No" defaultChecked/> No</label>
-                </div>
-              </div>
+                <label>
+                  <input 
+                    type="radio" 
+                    name="acompanante" 
+                    value="Si"
+                    onChange={(e) => setVieneAcompanante(e.target.value)} // <-- AÑADE ESTO
+                  /> Sí
+                </label>
+                <label>
+                <input 
+                  type="radio" 
+                  name="acompanante" 
+                  value="No" 
+                  defaultChecked // Mantenemos 'No' como opción por defecto
+                  onChange={(e) => setVieneAcompanante(e.target.value)} // <-- AÑADE ESTO
+                /> No
+              </label>
+            </div>
+          </div>
+          {vieneAcompanante === 'Si' && (
+            <div className={`${styles.formGroup} ${styles.conditionalField}`}>
+              <label htmlFor="nombreAcompanante" className={styles.label}>Nombre completo del acompañante:</label>
+              <input 
+                type="text" 
+                id="nombreAcompanante" 
+                name="nombreAcompanante" 
+                placeholder="Escribe su nombre y apellido" 
+                required // Hazlo requerido si asiste con alguien
+                className={styles.input}
+              />
+            </div>
+          )}
 
               <div className={styles.formGroup}>
                 <label className={styles.label}>¿Tienes alguna restricción alimentaria?</label>
