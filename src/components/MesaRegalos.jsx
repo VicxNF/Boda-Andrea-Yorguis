@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './MesaRegalos.module.css';
 
 const MesaRegalos = () => {
-  const linkListaDeNovios = "https://milistadenovios.cl/lista/andreyyor";
+  const linkListaDeNovios = "https://www.noviosparis.cl/home/couple-catalog/21037354";
 
   return (
     <div className={styles.regalosContainer}>
@@ -20,7 +20,7 @@ const MesaRegalos = () => {
             rel="noopener noreferrer"
             className={styles.ctaButton}
           >
-            Ver Lista de Sueños
+            Ver Lista de Regalos
           </a>
         </div>
       </div>
